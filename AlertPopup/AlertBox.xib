@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertBox" customModule="AlertPopup" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="kLi-Q3-EsX" id="25f-JE-AdO"/>
+                <outlet property="statusImage" destination="XY7-VS-44Y" id="xrZ-Ia-gpX"/>
+                <outlet property="titleLabel" destination="5eJ-nG-otZ" id="fV1-m2-Swc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="FhR-Nv-dzP">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OzT-u8-QYI">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="245"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XY7-VS-44Y">
+                        <rect key="frame" x="86.5" y="10" width="132" height="132.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XY7-VS-44Y" secondAttribute="height" multiplier="1:1" id="UeD-eR-n5K"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eJ-nG-otZ">
+                        <rect key="frame" x="8" y="162.5" width="289" height="49.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-Q3-EsX">
+                        <rect key="frame" x="8" y="217" width="289" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="kLi-Q3-EsX" secondAttribute="trailing" id="6Bk-CR-cQh"/>
+                    <constraint firstItem="5eJ-nG-otZ" firstAttribute="top" secondItem="XY7-VS-44Y" secondAttribute="bottom" constant="20" id="8ZJ-RF-P8c"/>
+                    <constraint firstItem="XY7-VS-44Y" firstAttribute="top" secondItem="OzT-u8-QYI" secondAttribute="top" constant="10" id="HrQ-6v-Zng"/>
+                    <constraint firstItem="kLi-Q3-EsX" firstAttribute="top" secondItem="5eJ-nG-otZ" secondAttribute="bottom" constant="5" id="SjZ-yl-02W"/>
+                    <constraint firstAttribute="bottom" secondItem="kLi-Q3-EsX" secondAttribute="bottom" constant="10" id="UGe-3L-Kgv"/>
+                    <constraint firstItem="XY7-VS-44Y" firstAttribute="centerX" secondItem="OzT-u8-QYI" secondAttribute="centerX" id="YUn-2C-1Uh"/>
+                    <constraint firstItem="5eJ-nG-otZ" firstAttribute="leading" secondItem="OzT-u8-QYI" secondAttribute="leadingMargin" id="uYh-gg-nUd"/>
+                    <constraint firstItem="kLi-Q3-EsX" firstAttribute="leading" secondItem="OzT-u8-QYI" secondAttribute="leadingMargin" id="wBU-Qe-duN"/>
+                    <constraint firstItem="XY7-VS-44Y" firstAttribute="height" secondItem="OzT-u8-QYI" secondAttribute="height" multiplier="0.54" id="xOC-Ls-JM6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5eJ-nG-otZ" secondAttribute="trailing" id="zPx-hA-j6R"/>
+                </constraints>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="132.60869565217394" y="3.683035714285714"/>
+        </visualEffectView>
+    </objects>
+</document>
